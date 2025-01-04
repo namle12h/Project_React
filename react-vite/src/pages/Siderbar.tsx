@@ -48,15 +48,11 @@
 
 // export default Sidebar;
 
-import React, { useRef } from "react";
+import React from "react";
 import { FaHome, FaFire, FaCompass, FaFilm } from "react-icons/fa";
 import { Link } from "react-router";
 
-interface SidebarProps {
-  scrollToPopular: () => void; // Hàm nhận từ component cha để cuộn trang
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ scrollToPopular }) => {
+const Sidebar: React.FC = () => {
   return (
     <div className="fixed top-[200px] left-0 w-64 h-auto bg-gray-900 text-gray-300 flex flex-col items-start p-4">
       <nav className="space-y-6">
@@ -67,10 +63,7 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToPopular }) => {
         <span className="text-sm font-medium">Home</span>
 
         {/* Trending */}
-        <button
-          onClick={scrollToPopular} // Gọi hàm cuộn khi nhấn vào Trending
-          className="flex items-center space-x-4 hover:text-white cursor-pointer"
-        >
+        <button className="flex items-center space-x-4 hover:text-white cursor-pointer">
           <FaFire size={20} />
         </button>
         <span className="text-sm font-medium">Trending</span>
