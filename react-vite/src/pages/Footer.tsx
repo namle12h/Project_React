@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
       {/* Next Page Button */}
       <button
         onClick={handleNextPage}
-        className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded mb-8"
+        className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mb-8"
       >
         Next Page
       </button>
 
       {/* Footer */}
-      <footer className="text-center text-sm text-gray-300 mt-8">
+      <footer className="text-center text-sm text-white-300 mt-8">
         <p>© MovieVennie All Rights Reserved</p>
       </footer>
     </div>

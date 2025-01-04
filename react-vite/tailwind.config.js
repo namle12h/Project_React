@@ -5,7 +5,17 @@ module.exports = {
     "./public/index.html", // Quét file HTML nếu có
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "zoom-out": "zoomOut 3s ease-in-out infinite",
+      },
+      keyframes: {
+        zoomOut: {
+          "0%": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(2)", opacity: "0" },
+        },
+      },
+    },
   },
   plugins: [],
 };

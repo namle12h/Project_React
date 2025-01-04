@@ -58,7 +58,7 @@ import { CiPlay1 } from "react-icons/ci";
 
 const MovieCard: React.FC<MovieCardProps> = ({ title, image, genre }) => {
   return (
-    <div className="movie-card relative w-[300px]">
+    <div className="movie-card relative w-[270px]">
       {/* Hình ảnh Poster */}
       <img
         className="movie-image w-[300px] h-full object-cover"
