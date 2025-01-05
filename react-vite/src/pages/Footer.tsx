@@ -1,25 +1,40 @@
-const Footer: React.FC = () => {
-  const handleNextPage = () => {
-    // Thực hiện điều hướng hoặc hành động khi bấm nút "Next Page"
-    console.log("Next Page clicked");
-  };
+// const Footer: React.FC = () => {
+//   return (
+//     <div className="bg-gray-900 text-white p-6 flex flex-col items-center">
+//       {/* Next Page Button */}
 
+//       {/* Footer */}
+//       <footer className="text-center text-sm text-white-300 mt-8">
+//         <p>© MovieVennie All Rights Reserved</p>
+//       </footer>
+//     </div>
+//   );
+// };
+
+// export default Footer;
+
+// function Footer() {
+//   return (
+//     <div className=" sticky top-0 z-50 container mx-auto text-center flex items-center justify-between bg-gray-900 px-9 py-3 h-16">
+//       <div className=" text-white p-6 flex flex-col items-center">
+//         <footer className="text-center text-sm text-white-300 mt-8">
+//           <p>© MovieVennie All Rights Reserved</p>
+//         </footer>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Footer;
+
+function Footer() {
   return (
-    <div className="bg-gray-900 text-white p-6 flex flex-col items-center">
-      {/* Next Page Button */}
-      <button
-        onClick={handleNextPage}
-        className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mb-8"
-      >
-        Next Page
-      </button>
-
-      {/* Footer */}
-      <footer className="text-center text-sm text-white-300 mt-8">
+    <div className="container mx-auto bg-gray-900 text-white px-9 py-3 h-16 flex items-center justify-center">
+      <footer className="text-center text-sm">
         <p>© MovieVennie All Rights Reserved</p>
       </footer>
     </div>
   );
-};
+}
 
 export default Footer;

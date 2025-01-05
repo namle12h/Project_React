@@ -1,93 +1,49 @@
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Header from "./pages/Header";
-// import Banner from "./pages/Banner";
-// import Sidebar from "./pages/Siderbar";
-// import MoviesAndShowsSection from "./pages/MoiveAndShow";
-// import MovieList from "./pages/MovieList";
-// import Footer from "./pages/Footer";
-// // import MovieDetail from "./pages/MovieDetail";
-
-// const App = () => {
-//   return (
-//     // <Router>
-//     //   <Routes>
-//     //     {/* <Route path="/" element={<Home />} /> */}
-//     //     {/* <Route path="test" element={<AdvancedSwiperExample />} /> */}
-//     //     {/* <Route path="/movies/:id" element={<MovieDetail />} /> */}
-//     //   </Routes>
-//     // </Router>
-//     // <Header/>
-
-//     <div className="flex">
-//       <Sidebar />
-//       <div className="flex-1 flex flex-col bg-gray-900 text-white">
-//         <div>
-//           <Header />
-//           {/* Phần Banner nằm trên */}
-//           <div className="banner-container">
-//             <Banner />
-//           </div>
-
-//           {/* Phần Swiper nằm dưới */}
-//           {/* <div className="swiper-container mt-6"> */}
-//           <MovieList />
-//           <MoviesAndShowsSection />
-//           <Footer />
-
-//           {/* <AdvancedSwiperExample /> */}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default App;
-
 import Header from "./Header";
 import Sidebar from "./Siderbar";
 import Banner from "./Banner";
 import MoviesAndShowsSection from "./MoiveAndShow";
 import MovieList from "./MovieList";
 import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const HomePage = () => {
   return (
-    <div className="flex">
-      {/* Sidebar Left */}
-      <div className="w-1/6 bg-gray-900 text-white">
+    <div className=" bg-gray-900 min-h-screen">
+      {/* Header */}
+      {/* <div className="sticky top-0 z-50 bg-gray-900 text-white"> */}
+      <Header />
+      {/* </div> */}
+
+      {/* Main Layout */}
+      <div className="grid grid-cols-12 gap-4 container mx-auto px-6 py-6">
+        {/* Sidebar Left */}
+        {/* <aside className="col-span-12 bg-gray-800 text-white rounded-lg p-4"> */}
         <Sidebar />
-      </div>
+        {/* </aside> */}
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col bg-gray-900 text-white">
-        {/* Header */}
-        <div className="sticky top-0 z-50">
-          <Header />
-        </div>
-
-        {/* Content */}
-        <div className="overflow-y-auto flex-grow">
-          {/* Banner */}
-          <div className="p-6">
-            <Banner />
-          </div>
-
-          {/* Movies and Shows */}
-          <div className="p-6">
+        {/* Main 1 */}
+        <section className=" col-span-12 bg-gray-900 rounded-lg p-6 shadow-md">
+          <Banner />
+          <div className="p-6 relative">
             <MovieList />
-            <MoviesAndShowsSection />
           </div>
+        </section>
 
-          {/* Footer */}
-          <Footer />
-        </div>
+        {/* Main 2 */}
+        <section className="col-span-12  bg-gray-900 rounded-lg p-6 shadow-md">
+          <MoviesAndShowsSection />
+        </section>
       </div>
 
-      {/* Sidebar Right */}
-      <div className="w-1/6 bg-gray-900 text-white">
-        {/* Placeholder hoặc nội dung sidebar phải */}
-        {/* <p className="p-4">Right Sidebar</p> */}
-      </div>
+      {/* Footer */}
+      {/* <footer className="bg-gray-800 text-white py-4 text-center">
+        <p>© 2025 Your Company. All Rights Reserved.</p>
+      </footer> */}
+      <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mb-8">
+        Next Page
+      </button>
+
+      <Footer />
     </div>
   );
 };

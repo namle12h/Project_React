@@ -47,8 +47,8 @@ const MoviesAndShowsSection: React.FC = () => {
     }
   };
   return (
-    <div className="p-6 max-w-[1250px]">
-      <h2 className="text-2xl font-bold mb-6 text-white bg-gray-800 p-2  border[0,7px] border-gray-300">
+    <div className="p-6 max-w-[1300px]">
+      <h2 className="text-2xl font-bold mb-6 text-white bg-gray-800 p-2  border border-gray-300">
         Movies and Shows
       </h2>
       <Swiper

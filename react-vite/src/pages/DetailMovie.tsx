@@ -76,7 +76,7 @@ export default function MovieDetail() {
   if (!movie) return <p>Loading...</p>;
 
   return (
-    <div className="bg-gray-900 text-yellow-500 min-h-screen">
+    <div className="bg-gray-900 text-yellow-500 min-h-screen ">
       <Header />
       <Sidebar />
       <div className="container mx-auto px-6 py-6">
@@ -108,7 +108,7 @@ export default function MovieDetail() {
                 ))}
               </div>
               <button>
-                <div className="flex items-center space-x-3 mt-4 ">
+                <div className=" relative flex items-center space-x-3 mt-4 ">
                   <div className="absolute w-16 h-16 bg-yellow-400 opacity-30 rounded-full animate-zoom-out"></div>
                   <button className="flex items-center justify-center w-10 h-10 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition duration-300">
                     <CiPlay1 className="text-2xl" />

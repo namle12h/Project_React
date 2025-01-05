@@ -2,13 +2,13 @@ import { CiPlay1 } from "react-icons/ci";
 
 function Banner() {
   return (
-    <div className="p-6">
+    <div className="ml-5">
       {/* Banner */}
-      <div className="relative rounded-lg overflow-hidden p-6 max-w-[1200px] h-[470px] space-x-8">
+      <div className="relative rounded-lg overflow-hidden p-6 max-w-[1250px] h-[470px] space-x-8">
         <img
           src="https://movie-site-delta.vercel.app/img/home-background.png"
           alt="Hitman's Wife's Bodyguard"
-          className="absolute inset-0 w-[1200px] h-full object-cover"
+          className="absolute inset-0 w-[1250px] h-full object-cover"
         />
 
         <div className="relative z-10 text-white">

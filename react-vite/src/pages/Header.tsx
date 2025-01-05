@@ -35,9 +35,9 @@ import { Link } from "react-router";
 
 function Header() {
   return (
-    <div className=" sticky top-0 z-50 container mx-auto flex py-8flex items-center justify-between bg-gray-900 px-9 py-3 h-16">
+    <div className=" sticky top-0 z-50 container mx-auto flex  flex items-center justify-between bg-gray-900 px-9 py-3 h-16">
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <Link to="/">
           <h1 className="text-2xl font-bold text-white">
             MOVIE<span className="text-yellow-500">VENNIE</span>
@@ -45,7 +45,7 @@ function Header() {
         </Link>
       </div>
       {/* Search and User Section */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-2">
         {/* Search Input */}
         <div className="relative flex items-center">
           <Input
